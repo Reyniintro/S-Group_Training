@@ -1,0 +1,150 @@
+body {
+    background-color: black;
+    color: rgb(234, 234, 234);
+    font-family: "Open Sans", Arial;
+    font-size: 16px;
+    margin: 1em auto;
+    padding: 2em 1em;
+    max-width: 800px;
+    line-height: 1.4;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto
+}
+
+.container {
+    display: flex;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    flex: 6;
+    margin-left: .5em;
+}
+
+.pic {
+    flex: 4;
+}
+
+.cute_cat {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.mtf {
+    color: rgb(176, 0, 0);
+}
+
+.wr {
+    color: rgb(210, 70, 55);
+}
+
+.sb {
+    color: rgb(0, 0, 238);
+}
+
+.v {
+    color: rgb(85, 27, 140)
+}
+
+.fff:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: .2em;
+    margin-right: .2em;
+    background-color: rgb(68, 68, 68);
+}
+.ffffff:before {
+    content: "";
+    display:inline-block;
+    width: 1em;
+    height: 1em;
+    margin-left: .2em;
+    margin-right: .2em;
+    background-color: rgb(69, 69, 69);
+}
+
+.fff {
+    color: rgb(68, 68, 68);
+}
+
+.ffffff {
+    color: rgb(69, 69, 69);
+}
+
+.Kopimi img {
+    display: block;
+    margin: 1em auto;
+    height: 2em;
+}
+
+figure {
+    margin: 1em .5em;
+}
+
+figcaption {
+    font-size: .8em;
+}
+
+a {
+    color: rgb(0, 162, 231);
+}
+
+a:hover {
+    color: rgb(219, 36, 125);
+}
+
+a:visited {
+    color: rgb(219, 36, 125);
+}
+
+h1 {
+    margin-bottom: .2em;
+}
+
+ul li img {
+    height: 1em;
+}
+
+p {
+    font-size: 17px;
+    margin: .5em 0;
+    color: rgb(204, 204, 204);
+}
+
+small {
+    font-size: .4em;
+}
+
+blockquote {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(201, 195, 189);
+    margin: 1em;
+}
+
+blockquote p::before {
+    content: open-quote;
+    font-size: 2em;
+    margin-right: .5em;
+    display: inline-block;
+}
+
+blockquote cite::before {
+    content: "- ";
+    margin-right: 1em;
+    padding-left: 2em;
+}
+
+blockquote p {
+    font-size: 1.2em;
+    color: inherit;
+    margin-bottom: .1em;
+}
+
+blockquote cite {
+    font-size: 0.8em;
+}
