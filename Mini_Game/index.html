@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Sudoku</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cl-sudoku-container">
+        <header class="cl-header">
+            <h1 class="cl-title">SUDOKU</h1>
+            <p class="cl-subtitle">Pure &amp; Minimalist</p>
+        </header>
+
+        <div class="cl-status-bar">
+            <div class="cl-mistakes-counter" id="cl-mistakes-counter">
+                Lỗi: <span id="cl-mistakes-count">0</span>/3
+            </div>
+            <button class="cl-reset-btn" id="cl-reset-btn">Chơi lại</button>
+        </div>
+
+        <div class="cl-board" id="cl-board"></div>
+
+        <div class="cl-message" id="cl-message"></div>
+
+        <div class="cl-numpad">
+            <button class="cl-num-key" data-value="1">1</button>
+            <button class="cl-num-key" data-value="2">2</button>
+            <button class="cl-num-key" data-value="3">3</button>
+            <button class="cl-num-key" data-value="4">4</button>
+            <button class="cl-num-key" data-value="5">5</button>
+            <button class="cl-num-key" data-value="6">6</button>
+            <button class="cl-num-key" data-value="7">7</button>
+            <button class="cl-num-key" data-value="8">8</button>
+            <button class="cl-num-key" data-value="9">9</button>
+            <button class="cl-num-key cl-key-erase" data-value="erase" id="cl-key-erase">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="currentColor">
+                    <path d="M352-240h328q26 0 45-19t19-45v-352q0-26-19-45t-45-19H352q-16 0-30.5 7.5T298-692L146-480l152 212q9 14 23.5 21t30.5 7zm28-80 100-100 100 100 56-56-100-100 100-100-56-56-100 100-100-100-56 56 100 100-100 100 56 56zm-28 160q-39 0-71-18.5t-49-49.5L50-480l154-212q17-23 49-41.5t71-18.5h328q58 0 99 41t41 99v352q0 58-41 99t-99 41H352z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar {
+            width: 200px;
+            background: #f5f5f7;
+            border-right: 1px solid #ddd;
+            padding: 16px;
+            min-height: 100vh;
+        }
+        .nav-item {
+            padding: 10px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-item:hover {
+            background: #e5e5e5;
+        }
+        .nav-item.active {
+            background: #e0e8ff;
+            color: #3355cc;
+            font-weight: 500;
+        }
+        .content {
+            padding: 32px;
+        }
+        .nav-item.has-sub::after {
+            content: ">";
+            margin-left: 50px;
+            font-size: 12px;
+            transition: all 0.15s ease;
+            display: inline-block;
+        }
+        .sub-menu {
+            display: none;
+        }
+        .sub-item{
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 4px;
+        }
+        .sub-item:hover {
+            background: #e5e5e5;
+        }
+    </style>
+</head>
+
+<body>
+    <aside class="sidebar">
+        <div class="nav-item active" data-page="tong-quan">🏠 Tổng quan</div>
+        <div class="nav-item" data-page="bao-cao">📊 Báo cáo</div>
+        <div class="nav-item has-sub" id="nav-users">👥 Người dùng</div>
+        <div class="sub-menu" id="sub-users">
+            <div class="sub-item" data-page="ds-users">Danh sách</div>
+            <div class="sub-item" data-page="them-user">Thêm mới</div>
+            <div class="sub-item" data-page="phan-quyen">Phân quyền</div>
+        </div>
+
+        <div class="nav-item has-sub" id="nav-settings">⚙️ Cài đặt</div>
+        <div class="sub-menu" id="sub-settings">
+            <div class="sub-item" data-page="ca-nhan">Cá nhân</div>
+            <div class="sub-item" data-page="bao-mat">Bảo mật</div>
+        </div>
+    </aside>
+    <main class="content">
+        <h1>Trang tổng quan</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+    </main>+++++
+
+    <script src="styles.js" type="text/javascript"></script>
+</body>
+
+</html>

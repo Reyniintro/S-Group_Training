@@ -9,6 +9,14 @@
     <link rel="stylesheet" type="text/css" href="styles2.css">
     <link rel="icon" type="image/jpeg" href="logoD.jpg">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
     <title>Defolio - Bootstrap 5 html resume template</title>
 </head>
 <body>
@@ -96,7 +104,12 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum nulla tellus, quis efficitur mauris tristique efficitur. Aliquam rhoncus sem sed ullamcorper venenatis. Aenean malesuada eu orci non sodales.</p>
                 <button><a href="#">DETAILS</a></button>
             </div>
-            <img class="cl-work" src="work-1.jpg">
+            <div class="slider">
+                <div><img class="cl-work" src="work-1.jpg"></div>
+                <div><img class="cl-work" src="https://mir-s3-cdn-cf.behance.net/projects/max_808/a0606790277677.Y3JvcCwxNTAwLDExNzMsMCwxNjM.jpg"></div>
+                <div><img class="cl-work" src="https://cdn.dribbble.com/userupload/8727429/file/original-8e42d51ca37afead805214e460c475f1.png?resize=752x&vertical=center"></div>
+            </div>
+                
         </div>
         <div class="cl-box">
             <div class="cl-inf">
@@ -104,7 +117,12 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum nulla tellus, quis efficitur mauris tristique efficitur. Aliquam rhoncus sem sed ullamcorper venenatis. Aenean malesuada eu orci non sodales.</p>
                 <button><a href="#">DETAILS</a></button>
             </div>
-            <img class="cl-work" src="work-2.jpg">
+            <div class="slider">
+                <div><img class="cl-work" src="work-2.jpg"></div>
+                <div><img class="cl-work" src="https://tse1.mm.bing.net/th/id/OIP.1f9vnT6sHxG0lw3ZkTyeyQHaEI?cb=thfvnextfalcon&rs=1&pid=ImgDetMain&o=7&rm=3"></div>
+                <div><img class="cl-work" src="https://thfvnext.bing.com/th/id/OIP.-SDxDsQe5cvGDhTRFhui7wHaFj?o=7&cb=thfvnextfalconrm=3&rs=1&pid=ImgDetMain&o=7&rm=3"></div>
+            </div>
+                
         </div>
         <div class="cl-box">
             <div class="cl-inf">
@@ -112,7 +130,11 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis sem maximus, ornare metus ut, congue enim. Sed fermentum nulla tellus, quis efficitur mauris tristique efficitur. Aliquam rhoncus sem sed ullamcorper venenatis. Aenean malesuada eu orci non sodales.</p>
                 <button><a href="#">DETAILS</a></button>
             </div>
-            <img class="cl-work" src="work-3.jpg">
+            <div class="slider">
+                <div><img class="cl-work" src="work-3.jpg"></div>
+                <div><img class="cl-work" src="https://thfvnext.bing.com/th/id/OIP.OJgoRVHf8qp2m0epzPCRMwHaEK?w=280&h=180&c=7&r=0&o=7&cb=thfvnextfalcon&dpr=1.5&pid=1.7&rm=3"></div>
+                <div><img class="cl-work" src="https://thfvnext.bing.com/th/id/OIP.5ev0Kh3_pqlHEdIIL4HOvAHaE8?w=240&h=180&c=7&r=0&o=7&cb=thfvnextfalcon&dpr=1.5&pid=1.7&rm=3"></div>
+            </div>
         </div>
     </div>
     <footer>
@@ -126,4 +148,17 @@
     <script src="style.js" type="text/javascript"></script>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $('.slider').slick({
+        autoplay: true,
+        autoplaySpeed: 200,
+        dots: true,
+        arrows: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+</script>
 </html> 
