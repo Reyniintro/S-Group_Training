@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane@example.com",
+      "age": 20
+    },
+    {
+      "id": 3,
+      "name": "Alice John",
+      "email": "alice@example.com",
+      "age": 28
+    },
+    {
+      "name": "Bob",
+      "email": "bob@example.com",
+      "age": 30
+    },
+    {
+      "name": "Charlie",
+      "email": "charlie@example.com",
+      "age": 22
+    },
+    {
+      "id": 1,
+      "name": "Thien Le",
+      "email": "reyniintro@example.com",
+      "age": 19
+    },
+    {
+      "id": 1,
+      "name": "Thien Le",
+      "email": "reyniintro@example.com",
+      "age": 19
+    },
+    {
+      "id": 1,
+      "name": "Thien Le",
+      "email": "reyniintro@example.com",
+      "age": 19
+    }
+  ]
+}
